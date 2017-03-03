@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Gathering Input</title>
+      <script lang="javascript">
+        function getName(){
+          var fullName;
+          var space = ' ';
+          fullName = document.getElementById("first").value
+          + space + document.getElementById("last").value;
+          document.getElementById("message").innerHTML = fullName;
+        }
+        </script>
+  </head>
+      <body>
+        <input type = "text" id = "first">
+        <input type = "text" id = "last">
+        <button type = "button" id = "doneButton"
+        onClick = "getName();">done</button>
+        <p id = "message"></p>
+      </body>
+</html>
